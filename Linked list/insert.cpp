@@ -35,19 +35,19 @@ int main(){
     int arr[] = {1,2,3,4,5};
 
     // Linked List does not exist
-    Node* Head = NULL;
+    Node* Head = NULL, *Tail = NULL;
 
     for(int i = 0; i < 5; i++){
 
         if(Head == NULL){
             Head = new Node(arr[i]);
+            Tail = Head;
         }
 
         // Linked List exists
         else{
-            Node* temp = new Node(arr[i]);
-            temp->next = Head;
-            Head = temp;
+            Tail->next = new Node(arr[i]);
+            Tail = Tail->next;
         }
     }
 
