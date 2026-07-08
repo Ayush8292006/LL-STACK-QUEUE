@@ -29,7 +29,7 @@ int main(){
     // cout << Head->data << endl;
 
     // -------------------------------
-    // Insert at the Beginning
+    // Insert at the end of the Linked List
     // -------------------------------
 
     int arr[] = {1,2,3,4,5};
